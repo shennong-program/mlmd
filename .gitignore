@@ -1,0 +1,17 @@
+*.tsbuildinfo
+.cache
+.DS_Store
+.idea
+.pnpm-debug.log*
+.vscode
+coverage
+lib/
+node_modules/
+npm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+
+local-file
