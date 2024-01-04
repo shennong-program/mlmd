@@ -58,3 +58,16 @@ Component to render markdown.
 #### Returns
 
 React element (`JSX.Element`).
+
+## Cite this work
+
+```bibtex
+@misc{yang2023aidriven,
+      title={AI-driven platform for systematic nomenclature and intelligent knowledge acquisition of natural medicinal materials}, 
+      author={Zijie Yang and Yongjing Yin and Chaojun Kong and Tiange Chi and Wufan Tao and Yue Zhang and Tian Xu},
+      year={2023},
+      eprint={2401.00020},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+```
