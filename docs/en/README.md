@@ -91,6 +91,42 @@ Hic est paragraphus Latinus secundus.
 
 Incidentally, the concept of a Block is actually one of the cores of MLMD, as when we wish to store data of different structures (such as links, images, etc.) within MLMD, they are essentially treated as individual Blocks. This management approach of Blocks allows MLMD to be conveniently parsed. The Blocks corresponding to multilingual parallel paragraphs are abbreviated as "Multi".
 
+### Lists (ordered/unordered)
+
+MLMD supports standard Markdown lists. In documents with a `{{langs|...}}` header, each paragraph inside a list item is aligned by language order: multiple lines in the same paragraph map to languages, and a blank line inside a list item starts a new paragraph.
+
+```mlmd
+{{langs|zh|en|la}}
+
+1. 列表项一
+   List item one
+   Primum item
+2. 列表项二
+   List item two
+   Secundum item
+
+- 无序项一
+  Unordered item one
+  Primum inordinatum
+
+- 多段第一段中文
+  Multi-paragraph first English
+  Primum paragraphum
+
+  多段第二段中文
+  Multi-paragraph second English
+  Secundum paragraphum
+```
+
+If you need hard line breaks within a single language, use `<br>` or `<br/>` on the same line to avoid being parsed as multilingual alignment.
+
+```mlmd
+{{langs|zh|en}}
+
+- 中文第一行<br>中文第二行
+  English line one
+```
+
 ### Language-invariant paragraphs
 
 In multilingual texts, certain text paragraphs remain the same across all languages. We refer to such text as language-invariant paragraphs. When a Block in our saved MLMD document contains only one paragraph of text, it is automatically regarded as a language-invariant text. This type of Block is abbreviated as "Mono". For example:

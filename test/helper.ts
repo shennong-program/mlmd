@@ -18,7 +18,7 @@ export function parseRemark(markdown: string, locale?: string) {
   return unified()
     .use(remarkParse)
     .use(remarkMlmd, { locale })
-    .use(remarkStringify)
+    .use(remarkStringify, { bullet: '-' })
     .processSync(markdown)
     .toString()
 }

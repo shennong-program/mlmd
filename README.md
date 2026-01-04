@@ -28,6 +28,14 @@ npx docsify-cli serve docs
 npm install mlmd
 ```
 
+## Development
+
+To run the test suite during development:
+
+```sh
+npm test
+```
+
 ## Use
 
 ```jsx

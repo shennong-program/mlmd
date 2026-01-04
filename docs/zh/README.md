@@ -224,6 +224,42 @@ Artificial Intelligence empowers the modernization of [traditional Chinese medic
 
 [Traditional Chinese medicine and pharmacy](<中医药>) is a treasure of China.
 
+### 列表（有序/无序）
+
+MLMD支持标准Markdown列表。在带`{{langs|...}}`头的文档中，列表项内的每个段落仍按语言顺序对齐：同一段落内的多行分别对应多种语言；列表项内的空行表示新的段落。
+
+```mlmd
+{{langs|zh|en|la}}
+
+1. 列表项一
+   List item one
+   Primum item
+2. 列表项二
+   List item two
+   Secundum item
+
+- 无序项一
+  Unordered item one
+  Primum inordinatum
+
+- 多段第一段中文
+  Multi-paragraph first English
+  Primum paragraphum
+
+  多段第二段中文
+  Multi-paragraph second English
+  Secundum paragraphum
+```
+
+如果需要在单语言内强制换行，请在同一行内使用`<br>`或`<br/>`，避免直接换行被解析为多语对齐。
+
+```mlmd
+{{langs|zh|en}}
+
+- 中文第一行<br>中文第二行
+  English line one
+```
+
 ### Multilingual
 
 当然，MLMD语法天然也适配多语种拓展性。

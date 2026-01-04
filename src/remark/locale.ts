@@ -1,5 +1,6 @@
 import type { PhrasingContent, Root } from 'mdast'
 import { Break } from 'mdast'
+import { visit } from 'unist-util-visit'
 
 export type Locale = string
 export type Lang = 'zh' | 'en' | 'la'
@@ -67,15 +68,15 @@ function getHeadingValue(values: string[], currentLangs: Lang[], targetLangs: La
 }
 
 function replaceHeadingByLocale(tree: Root, currentLangs: Lang[], targetLangs: Lang[]) {
-  for (const node of tree.children) {
-    if (node.type === 'heading' && node.children.length > 0) {
+  visit(tree, 'heading', (node) => {
+    if (node.children.length > 0) {
       const first = node.children[0]
       if (first.type === 'text' && first.value) {
         const values = first.value.split(HEAD_PART_SEPARATOR).map((v) => v.trim())
         first.value = getHeadingValue(values, currentLangs, targetLangs)
       }
     }
-  }
+  })
 }
 
 type ParagraphLangValues = {
@@ -132,12 +133,12 @@ function replaceParagraphByLocale(tree: Root, currentLangs: Lang[], targetLangs:
     return
   }
 
-  for (const node of tree.children) {
-    if (node.type === 'paragraph' && node.children.length > 0) {
+  visit(tree, 'paragraph', (node) => {
+    if (node.children.length > 0) {
       const values = splitByBreak(node.children)
       node.children = getParagraphChildren(values, currentLangs, targetLangs)
     }
-  }
+  })
 }
 
 export function parseLocale(tree: Root, locale: Locale | undefined) {
