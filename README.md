@@ -16,7 +16,7 @@ Multilingual Markdown parser
 
 ## Documentation
 
-Documentation lives in `docs/` and is served with Docsify. To preview locally:
+Documentation lives in `docs/` and is served with Docsify. It is published via GitHub Pages (see the repository Pages settings for the URL). To preview locally:
 
 ```sh
 npx docsify-cli serve docs
