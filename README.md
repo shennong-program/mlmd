@@ -16,15 +16,11 @@ Multilingual Markdown parser
 
 ## Documentation
 
-The documentation for `mlmd` is available on the documentation website of the ShennongAlpha ([ShennongDoc](https://shennongalpha.westlake.edu.cn/doc/)):
+Documentation lives in `docs/` and is served with Docsify. To preview locally:
 
-- [English](https://shennongalpha.westlake.edu.cn/doc/en/mlmd/)
-- [中文](https://shennongalpha.westlake.edu.cn/doc/zh/mlmd/)
-
-You can also contribute to the documentation on the [`ShennongDoc`](https://github.com/Shennong-Program/ShennongDoc) GitHub repository by submitting a pull request:
-
-- [English](https://github.com/Shennong-Program/ShennongDoc/tree/main/doc/en/mlmd/)
-- [中文](https://github.com/Shennong-Program/ShennongDoc/tree/main/doc/zh/mlmd/)
+```sh
+npx docsify-cli serve docs
+```
 
 ## Install
 
@@ -61,4 +57,4 @@ React element (`JSX.Element`).
 
 ## Cite this work
 
-Yang, Z., Yin, Y., Kong, C. et al. ShennongAlpha: an AI-driven sharing and collaboration platform for intelligent curation, acquisition, and translation of natural medicinal material knowledge. Cell Discov 11, 32 (2025). https://doi.org/10.1038/s41421-025-00776-2
+Yang, Z., Yin, Y., Kong, C. et al. ShennongAlpha: an AI-driven sharing and collaboration platform for intelligent curation, acquisition, and translation of natural medicinal material knowledge. Cell Discov 11, 32 (2025). <https://doi.org/10.1038/s41421-025-00776-2>
