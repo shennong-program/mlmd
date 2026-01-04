@@ -8,7 +8,7 @@ import { unified } from 'unified'
 import rehypeMlmd from '../src/rehype'
 import remarkMlmd from '../src/remark'
 
-const base = path.join('test', 'fixtures')
+const base = path.join('tests', 'fixtures')
 
 export function readFile(filename: string) {
   return String(fs.readFileSync(path.join(base, filename)))

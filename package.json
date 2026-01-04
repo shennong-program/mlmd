@@ -23,7 +23,7 @@
   "scripts": {
     "build": "rm -rf lib && microbundle --jsx React.createElement -f cjs,esm --sourcemap false --compress true",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
-    "lint": "npx eslint src test",
+    "lint": "npx eslint src tests",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "git add -A src",
