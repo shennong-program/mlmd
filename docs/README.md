@@ -1,4 +1,4 @@
 # MLMD Documentation
 
-- [Chinese (ZH)](zh/)
-- [English (EN)](en/)
+- [中文](zh/)
+- [English](en/)

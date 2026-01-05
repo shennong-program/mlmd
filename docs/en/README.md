@@ -1,4 +1,4 @@
-# Documentation for `mlmd`: Multilingual Markdown (MLMD)
+# Multilingual Markdown (MLMD)
 
 ## Core design principles
 
@@ -261,6 +261,22 @@ Multi-line comment
 An *italic* paragraph in English within the 4th Block (Multi).
 ```
 
+### Images
+
+MLMD uses standard Markdown syntax for images. An image is rendered as a Mono block. For example:
+
+```mlmd
+{{langs|zh|en}}
+
+人工智能赋能[[中医药]]现代化。
+Artificial Intelligence empowers the modernization of [[中医药|traditional Chinese medicine and pharmacy]].
+
+![An AI image](image path)
+
+[[中医药]]是中国的瑰宝。
+[[中医药|Traditional Chinese medicine and pharmacy]] is a treasure of China.
+```
+
 ### Templates
 
 For texts with specific functionalities, MLMD employs the template syntax `{{...}}` for annotation. No spaces are allowed between the double curly brackets `{{` and `}}`. For instance, the MLMD language header is a type of specialized template.
@@ -300,3 +316,115 @@ By utilizing coreference annotation to denote the relationships between standard
 ## HTML Parsing
 
 Through a parsing flow: MLMD → Abstract Syntax Tree (AST) → HTML, MLMD can be rendered into HTML with rich text formatting, enhancing the user experience while reading its content. ShennongAlpha natively supports HTML rendering of MLMD, offering the bilingual content presentation in four modes: "Chinese-English", "English-Chinese", "Chinese", and "English".
+
+## ShennongAlpha Bilingual Display of MLMD
+
+MLMD can be automatically parsed into HTML on the ShennongAlpha website and supports switching among four display modes: "Chinese-English", "English-Chinese", "Chinese", and "English".
+
+### Example: multi-mono mixed text
+
+```mlmd
+{{langs|zh|en}}
+
+青蒿是一种天然药材。
+Qing-hao is a kind of NMMs.
+
+NMM-0001是一个NMM ID。
+
+NMM-0001 is a NMM ID.
+```
+
+![MLMD demo: multi-mono mixed text - MLMD source](../images/mlmd-multi-mono.png ':size=50%')
+
+Figure: MLMD demo: multi-mono mixed text - MLMD source
+
+![MLMD demo: multi-mono mixed text - Chinese-English mode](../images/mlmd-multi-mono-zh-en.png ':size=50%')
+
+Figure: MLMD demo: multi-mono mixed text - Chinese-English mode
+
+![MLMD demo: multi-mono mixed text - English-Chinese mode](../images/mlmd-multi-mono-en-zh.png ':size=50%')
+
+Figure: MLMD demo: multi-mono mixed text - English-Chinese mode
+
+![MLMD demo: multi-mono mixed text - Chinese mode](../images/mlmd-multi-mono-zh.png ':size=50%')
+
+Figure: MLMD demo: multi-mono mixed text - Chinese mode
+
+![MLMD demo: multi-mono mixed text - English mode](../images/mlmd-multi-mono-en.png ':size=50%')
+
+Figure: MLMD demo: multi-mono mixed text - English mode
+
+### Example: coreference annotation
+
+```mlmd
+{{langs|zh|en}}
+
+[[nmm-0001|青蒿]]是一种天然药材。
+[[nmm-0001|Qing-hao]] is a kind of NMMs.
+
+[[NMM-0001]]是一个NMM ID。
+
+[[NMM-0001]] is a NMM ID.
+```
+
+![MLMD demo: coreference annotation - MLMD source](../images/mlmd-coreference.png ':size=50%')
+
+Figure: MLMD demo: coreference annotation - MLMD source
+
+![MLMD demo: coreference annotation - Chinese-English mode](../images/mlmd-coreference-zh-en.png ':size=50%')
+
+Figure: MLMD demo: coreference annotation - Chinese-English mode
+
+![MLMD demo: coreference annotation - English-Chinese mode](../images/mlmd-coreference-en-zh.png ':size=50%')
+
+Figure: MLMD demo: coreference annotation - English-Chinese mode
+
+![MLMD demo: coreference annotation - Chinese mode](../images/mlmd-coreference-zh.png ':size=50%')
+
+Figure: MLMD demo: coreference annotation - Chinese mode
+
+![MLMD demo: coreference annotation - English mode](../images/mlmd-coreference-en.png ':size=50%')
+
+Figure: MLMD demo: coreference annotation - English mode
+
+### Example: headings
+
+```mlmd
+{{langs|zh|en}}
+
+# 一级标题 | Heading Level-1
+
+## 二级标题 | Heading Level-2
+
+### 三级标题 | Heading Level-3
+
+#### 四级标题 | Heading Level-4
+
+##### 五级标题 | Heading Level-5
+
+###### 六级标题 | Heading Level-6
+
+# 单语一级标题
+
+## Heading Level-2 Monolingual
+```
+
+![MLMD demo: headings - MLMD source](../images/mlmd-heading.png ':size=50%')
+
+Figure: MLMD demo: headings - MLMD source
+
+![MLMD demo: headings - Chinese-English mode](../images/mlmd-heading-zh-en.png ':size=50%')
+
+Figure: MLMD demo: headings - Chinese-English mode
+
+![MLMD demo: headings - English-Chinese mode](../images/mlmd-heading-en-zh.png ':size=50%')
+
+Figure: MLMD demo: headings - English-Chinese mode
+
+![MLMD demo: headings - Chinese mode](../images/mlmd-heading-zh.png ':size=50%')
+
+Figure: MLMD demo: headings - Chinese mode
+
+![MLMD demo: headings - English mode](../images/mlmd-heading-en.png ':size=50%')
+
+Figure: MLMD demo: headings - English mode

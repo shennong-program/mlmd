@@ -1,4 +1,4 @@
-# `mlmd`文档：多语Markdown (Multilingual Markdown, MLMD)
+# 多语Markdown
 
 多语Markdown (Multilingual Markdown, MLMD) 是由西湖大学神农计划提出的一种全新的、专门为多语文档设计的Markdown语法，其可以在一个单一的文档中并行组织和嵌入多种语言内容，以实现平行对比、统一管理和优化展示。这种方法不仅使文档的编写和编辑更为方便，还为处理和分析多语数据提供了一种结构化方案。
 
@@ -552,23 +552,23 @@ NMM-0001是一个NMM ID。
 NMM-0001 is a NMM ID.
 ```
 
-![MLMD展示：multi-mono文本混排-MLMD源码](images/mlmd-multi-mono.png ':size=50%')
+![MLMD展示：multi-mono文本混排-MLMD源码](../images/mlmd-multi-mono.png ':size=50%')
 
 图：MLMD展示：multi-mono文本混排-MLMD源码
 
-![MLMD展示：multi-mono文本混排-中英模式](images/mlmd-multi-mono-zh-en.png ':size=50%')
+![MLMD展示：multi-mono文本混排-中英模式](../images/mlmd-multi-mono-zh-en.png ':size=50%')
 
 图：MLMD展示：multi-mono文本混排-中英模式
 
-![MLMD展示：multi-mono文本混排-英中模式](images/mlmd-multi-mono-en-zh.png ':size=50%')
+![MLMD展示：multi-mono文本混排-英中模式](../images/mlmd-multi-mono-en-zh.png ':size=50%')
 
 图：MLMD展示：multi-mono文本混排-英中模式
 
-![MLMD展示：multi-mono文本混排-中模式](images/mlmd-multi-mono-zh.png ':size=50%')
+![MLMD展示：multi-mono文本混排-中模式](../images/mlmd-multi-mono-zh.png ':size=50%')
 
 图：MLMD展示：multi-mono文本混排-英模式
 
-![MLMD展示：multi-mono文本混排-英模式](images/mlmd-multi-mono-en.png ':size=50%')
+![MLMD展示：multi-mono文本混排-英模式](../images/mlmd-multi-mono-en.png ':size=50%')
 
 图：MLMD展示：multi-mono文本混排-英模式
 
@@ -585,23 +585,23 @@ NMM-0001 is a NMM ID.
 [[NMM-0001]] is a NMM ID.
 ```
 
-![MLMD展示：共指注释-MLMD源码](images/mlmd-coreference.png ':size=50%')
+![MLMD展示：共指注释-MLMD源码](../images/mlmd-coreference.png ':size=50%')
 
 图：MLMD展示：共指注释-MLMD源码
 
-![MLMD展示：共指注释-中英模式](images/mlmd-coreference-zh-en.png ':size=50%')
+![MLMD展示：共指注释-中英模式](../images/mlmd-coreference-zh-en.png ':size=50%')
 
 图：MLMD展示：共指注释-中英模式
 
-![MLMD展示：共指注释-英中模式](images/mlmd-coreference-en-zh.png ':size=50%')
+![MLMD展示：共指注释-英中模式](../images/mlmd-coreference-en-zh.png ':size=50%')
 
 图：MLMD展示：共指注释-英中模式
 
-![MLMD展示：共指注释-中模式](images/mlmd-coreference-zh.png ':size=50%')
+![MLMD展示：共指注释-中模式](../images/mlmd-coreference-zh.png ':size=50%')
 
 图：MLMD展示：共指注释-中模式
 
-![MLMD展示：共指注释-英模式](images/mlmd-coreference-en.png ':size=50%')
+![MLMD展示：共指注释-英模式](../images/mlmd-coreference-en.png ':size=50%')
 
 图：MLMD展示：共指注释-英模式
 
@@ -627,22 +627,22 @@ NMM-0001 is a NMM ID.
 ## Heading Level-2 Monolingual
 ```
 
-![MLMD展示：标题-MLMD源码](images/mlmd-heading.png ':size=50%')
+![MLMD展示：标题-MLMD源码](../images/mlmd-heading.png ':size=50%')
 
 图：MLMD展示：标题-MLMD源码
 
-![MLMD展示：标题-中英模式](images/mlmd-heading-zh-en.png ':size=50%')
+![MLMD展示：标题-中英模式](../images/mlmd-heading-zh-en.png ':size=50%')
 
 图：MLMD展示：标题-中英模式
 
-![MLMD展示：标题-英中模式](images/mlmd-heading-en-zh.png ':size=50%')
+![MLMD展示：标题-英中模式](../images/mlmd-heading-en-zh.png ':size=50%')
 
 图：MLMD展示：标题-英中模式
 
-![MLMD展示：标题-中模式](images/mlmd-heading-zh.png ':size=50%')
+![MLMD展示：标题-中模式](../images/mlmd-heading-zh.png ':size=50%')
 
 图：MLMD展示：标题-中模式
 
-![MLMD展示：标题-英模式](images/mlmd-heading-en.png ':size=50%')
+![MLMD展示：标题-英模式](../images/mlmd-heading-en.png ':size=50%')
 
 图：MLMD展示：标题-英模式
